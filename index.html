@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +9,93 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <br>
-    <h1>Tabelas</h1> </br>
-    <table>
-        <tr>
-            <th>Roupa</th>
-            <th>Cores</th>
-            <th>Tamanho</th>
-            <th>Tamanho</th>
-            <th>Disponibilidade</th>
-        </tr>
-        <tr>
-            <td>Camiseta</td>
-            <td>preta</td>
-            <td>M</td>
-            <td>R$70,00</td>
-            <td>em estoque</td>
-        </tr>
-        <tr>
-            <td>Bermuda</td>
-            <td>Azul</td>
-            <td>R$120,00</td>
-            <td>G</td>
-            <td>em falta</td>
-        </tr>
-    </table>
-    <img src="img/Sala.jpg">
+<h1>Tabelas</h1>
+</br>
+<table>
+    <tr>
+        <th>Roupa</th>
+        <th>Cores</th>
+        <th>Tamanho</th>
+        <th>Tamanho</th>
+        <th>Disponibilidade</th>
+    </tr>
+    <tr>
+        <td>Camiseta</td>
+        <td>preta</td>
+        <td>M</td>
+        <td>R$70,00</td>
+        <td>em estoque</td>
+    </tr>
+    <tr>
+        <td>Bermuda</td>
+        <td>Azul</td>
+        <td>R$120,00</td>
+        <td>G</td>
+        <td>em falta</td>
+    </tr>
+</table>
+<img src="img/Sala.jpg">
+<div id="form_basico">
+    <h1>Formulario</h1>
+    <h2>Formulario GET</h2>
+    <form method="GET" action="index.html">
+        <input type="text" name="q">
+        <input type="submit" value="Enviar">
+    </form>
+    <h2>Formulario POST</h2>
+    <form method="POST" action="index.html">
+        <input type="text" name="p">
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+<div id="form_cadastro">
+    <h2>Formulario de login</h2>
+    <form method="GET" action="index.html">
+        <h3>Informe seu nome e sobrenome:</h3>
+        <input type="text" name="nome" id="nome" placeholder="nome" required>
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="sobrenome">
+        <h3>Informe email ou celular:</h3>
+        <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="celular-ou-email" required>
+        <br>
+        <h3>Defina uma senha:</h3>
+        <input type="password" name="password" id="password" placeholder="password" required><br><br>
+        <label>Data de Nascimento</label>
+        <br>
+        <select name="dia">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <select name="mes">
+            <option value="1">jan</option>
+            <option value="2">fev</option>
+            <option value="3">mar</option>
+            <option value="4">abr</option>
+            <option value="5">mai</option>
+        </select>
+        <select name="ano">
+            <option value="1">1990</option>
+            <option value="2">1991</option>
+            <option value="3">1992</option>
+            <option value="4">1993</option>
+            <option value="5">1994</option>
+        </select>
+        <br><br>
+        <label>Genero</label>
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" id="feminino" value="feminino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="masculino" value="masculino">
+        <label for="personalizado">Personalizado</label>
+        <input type="radio" name="genero" id="personalizado" value="personalizado">
+        <br>
+        <br>
+        <input type="submit" value="enviar">
+    </form>
+    <p>Formulario em metodo GET exibbe informaçoes na url.</p>
+</div>
 </body>
+
 </html>
